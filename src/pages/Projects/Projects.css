@@ -1,0 +1,66 @@
+.Projectsh1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 350px 0 100px 0;
+    font-weight: bold;
+}
+
+.cardP {
+    transition: .7s;
+    border: none;
+    cursor: pointer; 
+}
+
+
+.cardP::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1.4s;
+    z-index: 2;
+}
+
+.cardP:hover::before {
+    width: 50%;
+}
+
+.cardP::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1.4s;
+}
+
+.cardP:hover::after {
+    width: 50%;
+}
+
+.cardP:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.cardP:hover .textOverlay {
+    opacity: 1;
+}

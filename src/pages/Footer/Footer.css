@@ -1,0 +1,10 @@
+footer {
+    background-color: black;
+    height: 150px;
+    text-align: center;
+    padding-top: 75px;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: white;
+}

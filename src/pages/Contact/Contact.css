@@ -1,0 +1,14 @@
+.SecCon{
+    border: none;
+    margin-top: 150px;
+}
+
+.ContentMe {
+    margin-top: 70px;
+}
+
+.ContentMe h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}

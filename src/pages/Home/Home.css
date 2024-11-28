@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.SecHome{
+    border: none;
+}
+
+.content {
+    margin-top: 250px;
+}
+
+.content h2 {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0;
+
+}
+
+.content #name {
+    color: #ba3139;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-weight: 300;
+    font-size: 17px;
+    margin: 5px 0;
+    color: #383838;
+}
+
+.img-ani {
+    animation: upDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(80px);
+    }
+}
+
+.buttons button {
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 110px;
+    border: none;
+    background-color: #ba3139;
+    color: white;
+    transition: 0.2s;
+    font-size: 14px;
+    cursor: pointer;
+}
+.buttons a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    transform: scale(1.05);
+}
+button:nth-child(2){
+    background-color: #383838;
+}
